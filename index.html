@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"> </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"> </script>
+    <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPRxOCwcySCsvuSbsxCQkmyDhCRE4CGwU",
+      authDomain: "mul-player-car-racing-ga-adfcf.firebaseapp.com",
+      databaseURL: "https://mul-player-car-racing-ga-adfcf-default-rtdb.firebaseio.com",
+      projectId: "mul-player-car-racing-ga-adfcf",
+      storageBucket: "mul-player-car-racing-ga-adfcf.appspot.com",
+      messagingSenderId: "574488150834",
+      appId: "1:574488150834:web:38747e7e13c4e30491cd2b"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
